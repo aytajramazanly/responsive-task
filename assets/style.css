@@ -55,7 +55,7 @@ ul li{
 
 .icon i{
   font-size: 25px;
-  color: rgb(156, 156, 156);
+  color: rgb(156, 156, 156) !important;
 }
 
 section .diff{
@@ -83,15 +83,11 @@ section .diff{
     align-items: center;
     padding: 0 30px;
 }
-#navbar .col-lg-4 ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
+
+#navbar [class*="col-"] ul li:hover{
+    font-weight: 700;
 }
-#navbar .col-lg-4 ul li a {
-    font-size: 17px;
-    font-weight: 500;
-}
+
 #navbar .col-lg-4 a{
  display: block;
 }
@@ -355,7 +351,6 @@ footer .row{
 footer ul{
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
 footer ul li i{
