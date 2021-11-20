@@ -1,0 +1,364 @@
+/* general style */
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.title{
+    position: relative;
+}
+
+.title h2{
+  font-weight: 800;
+  font-size: 30px;
+}
+p.light{
+  color: #777;
+  font-weight: 400;
+}
+
+p.light.big{
+   font-size: 17px;
+   text-align: center;
+}
+.title h2 span{
+  font-weight: 400;
+  color: #777;
+}
+.section-header{
+ padding-bottom: 70px;
+}
+.title::after{
+  content: "";
+  width: 110px;
+  height: 1px;
+  background-color: #777;
+  position: absolute;
+  top: 55%;
+}
+
+h3{
+   font-size: 20px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li{
+  text-align: center;
+}
+
+.icon i{
+  font-size: 25px;
+  color: rgb(156, 156, 156);
+}
+
+section .diff{
+  justify-content: space-around;
+  row-gap: 40px;
+  padding: 40px 0;
+  position: relative;
+}
+
+
+
+/* Header navbar style */  
+#navbar{
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+    padding: 1% 0;
+}
+
+#navbar .nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+#navbar .col-lg-4 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#navbar .col-lg-4 ul li a {
+    font-size: 17px;
+    font-weight: 500;
+}
+#navbar .col-lg-4 a{
+ display: block;
+}
+
+#navbar .col-lg-4 a p{
+    font-weight: 400;
+    font-size: 20px;
+}
+#navbar .col-lg-4 a p span{
+    font-weight: 800;
+}
+
+#navbar .bar-logo{
+    display: none;
+    color: #777;
+    font-size: 30px;
+}
+
+/* Main slider style */
+
+.slider-back{
+    display: table;
+    width: 100%;
+    background-image: url(http://coderspoint.net/html/showkes/assets/img/bg/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    opacity: 2;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+#slider .title{
+    gap: 100px;
+    padding-top: 18%;
+    height: 700px;
+}
+
+#slider .title::after{
+    display: none;
+}
+#slider .row .title.slider h2{
+    font-weight: 400;
+    color: #fff;
+}
+
+#slider .row .title p{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#slider .row .title.slider .link .button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+#slider .row .title.slider .link .button:hover{
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* About me section style */
+
+#about-me .title{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#about-me .description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20px;
+}
+#about-me .description h3{
+    font-weight: 400;
+    font-size: 21px;
+    color: #333;
+}
+#about-me .description h3 span{
+    font-weight: 800;
+}
+#about-me .description p{
+    color: #777;
+    font-size: 18px;
+}
+
+#about-me .description .button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+#about-me .description .button:hover{
+    background-color: #777;
+    transition: 0.5s;
+}
+
+/* What I Do section style */
+
+#what-i-do .row .whatido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   padding: 20px 0;
+}
+
+#what-i-do .row .whatido .icon i{
+    font-size: 25px;
+    color: rgb(156, 156, 156);
+}
+
+#what-i-do .row .whatido p.light.big{
+    width: 250px;
+}
+
+/* My Works section style */
+
+
+#my-works .work-filters ul{
+    gap: 82px;
+}
+
+#my-works .work-filters ul li h3{
+    font-weight: 500;
+}
+
+#my-works .work-filters ul li:hover  h3{
+font-weight: 900;
+}
+
+#my-works img{
+    width: 100%;
+}
+
+#my-works img:hover{
+    transform: scale(1.2);
+    transition: 0.8s ease-in-out;
+    opacity: 0.5;
+}
+
+#my-works .works{
+    padding: 0 10px;
+    position: relative;
+}
+
+#my-works .works .item i{
+    font-size: 25px;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    display: none;
+}
+
+#my-works img:hover + .item i{
+    display: block;
+}
+
+
+/* reference style */
+#reference{
+    position: relative;
+}
+#reference .row{
+    flex-direction: column;
+    align-items: center;
+}
+
+#reference .light.big{
+    width: 700px;
+    font-size: 17px;
+}
+
+#reference::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    top: 100%;
+}
+
+#contact-me{
+    text-align: center;
+}
+
+#contact-me .contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+#contact-me input{
+    width: 670px;
+    height: 100px;
+    border: 1px solid rgb(196, 195, 195);
+    padding: 0 30px;
+    
+}
+
+#contact-me .name{
+    position: absolute;
+    top: 14px;
+    left: 65px;
+}
+#contact-me .email{
+    position: absolute;
+    top: 95px;
+    left: 65px;
+}
+#contact-me .message{
+    position: absolute;
+    top: 198px;
+    left: 65px;
+}
+#contact-me input.standart{
+    height: 55px;
+}
+
+#contact-me .link .button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+#contact-me .link .button:hover{
+    background-color: #777;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Footer style */
+
+footer{
+    background-color: #333;
+    color: #fff;
+}
+
+footer .row{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 0;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer ul li i{
+    font-size: 25px;
+    color: #fff;
+}
