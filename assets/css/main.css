@@ -109,14 +109,19 @@ section{
       width: calc(100%);
     }
     .container{
-      max-width: 950px;
+      max-width: 991px;
     }
     
     #contact-me .message,
     #contact-me .name,
     #contact-me .email{
-      left: -8px;
-  }
+      left: 4px !important;
+    }
+    #slider .title-slider{
+      gap: 40px !important;
+      padding-top: 11% !important;
+      height: 400px !important;
+    }
   }
 
 
@@ -162,16 +167,16 @@ section{
 
 
     .container{
-      max-width: 747px;
+      max-width: 767px;
     }
     #navbar .nav-list{
       display: none;
     }
     #navbar .bar-logo{
-      display: block;
+      display: block !important;
     }
-    #navbar .nav{
-      padding: 0 30px;
+    #navbar .row{
+      padding: 3px 30px !important;
     }
 
     #about-me .about-me-image{
@@ -181,6 +186,12 @@ section{
     #contact-me .message,
     #contact-me .name,
     #contact-me .email{
-      left: -75px;
-  }
+      left: -72px !important;
+    }
+
+    #slider .title-slider{
+      gap: 40px !important;
+      padding-top: 11% !important;
+      height: 400px !important;
+    }
   }

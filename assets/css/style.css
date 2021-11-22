@@ -7,11 +7,13 @@ a{
 
 .title{
     position: relative;
+    text-align: center;
 }
 
 .title h2{
   font-weight: 800;
   font-size: 30px;
+  padding: 15px 0;
 }
 p.light{
   color: #777;
@@ -26,16 +28,17 @@ p.light.big{
   font-weight: 400;
   color: #777;
 }
-.section-header{
+.title{
  padding-bottom: 70px;
 }
 .title::after{
   content: "";
-  width: 110px;
+  width: 70px;
   height: 1px;
   background-color: #777;
   position: absolute;
-  top: 55%;
+  top: 40%;
+  left: 43%;
 }
 
 h3{
@@ -69,23 +72,23 @@ section .diff{
 
 /* Header navbar style */  
 #navbar{
-    height: 70px;
+    height: 55px;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 999;
     background-color: #fff;
-    padding: 1% 0;
+    padding: 0;
 }
 
-#navbar .nav{
+#navbar .row{
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 
 #navbar [class*="col-"] ul li:hover{
-    font-weight: 700;
+    text-shadow: rgb(0 0 0 / 100%) 0 0 1px;
 }
 
 #navbar .col-lg-4 a{
@@ -116,43 +119,53 @@ section .diff{
     background-position: center;
     position: relative;
     background-attachment: fixed;
-    opacity: 2;
 }
 
-.title{
+.slider-back::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+ #slider .index{
+     z-index: 1;
+     
+ }
+#slider .title-slider{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-}
-#slider .title{
     gap: 100px;
     padding-top: 18%;
     height: 700px;
+    text-shadow: rgb(0 0 0 / 60%) 2px 2px 3px;
 }
 
-#slider .title::after{
+#slider .title-slider::after{
     display: none;
 }
-#slider .row .title.slider h2{
+#slider .row .title-slider h2{
     font-weight: 400;
     color: #fff;
 }
 
-#slider .row .title p{
+#slider .row .title-slider p{
     color: #fff;
     font-size: 50px;
     font-weight: 600;
 }
 
-#slider .row .title.slider .link .button{
+#slider .row .title-slider .link .button{
     padding: 10px 20px;
     background-color: #fff;
     color: #333;
     font-weight: 600;
     font-size: 15px;
+    text-shadow: rgb(0 0 0 / 0) 0 0 0;
 }
-#slider .row .title.slider .link .button:hover{
+#slider .row .title-slider .link .button:hover{
     background-color: #333;
     color: #fff;
     transition: 0.5s;
@@ -160,11 +173,11 @@ section .diff{
 
 /* About me section style */
 
-#about-me .title{
+/* #about-me .title{
     position: relative;
     width: 600px;
     margin: 0 auto;
-}
+} */
 
 #about-me .description{
     display: flex;
@@ -220,7 +233,7 @@ section .diff{
 
 
 #my-works .work-filters ul{
-    gap: 82px;
+    gap: 60px;
 }
 
 #my-works .work-filters ul li h3{
@@ -228,7 +241,7 @@ section .diff{
 }
 
 #my-works .work-filters ul li:hover  h3{
-font-weight: 900;
+    text-shadow: rgb(0 0 0 / 100%) 0 0 1px;
 }
 
 #my-works img{
@@ -277,16 +290,13 @@ font-weight: 900;
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #777;
+    background-color: #c3c3c3;
     position: absolute;
     top: 100%;
 }
 
-#contact-me{
-    text-align: center;
-}
 
-#contact-me .contact-form form{
+#contact-me  form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,6 +344,11 @@ font-weight: 900;
     transition: 0.5s;
 }
 
+#contact-me input:focus{
+    outline: none;
+    border: 1px solid yellowgreen;
+}
+
 /* Footer style */
 
 footer{
@@ -356,4 +371,29 @@ footer ul{
 footer ul li i{
     font-size: 25px;
     color: #fff;
+}
+
+footer ul li i:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+footer ul li i.fa-facebook-f:hover{
+    color: #1877f2;
+}
+
+footer ul li i.fa-twitter:hover{
+    color: #00acee;
+}
+
+footer ul li i.fa-google-plus-g:hover{
+    color: #EA4335;
+}
+
+footer ul li i.fa-tumblr:hover{
+    color: #34526f;
+}
+
+footer ul li i.fa-linkedin-in:hover{
+    color: #0e76a8;
 }
